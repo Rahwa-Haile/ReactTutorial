@@ -46,7 +46,7 @@ const Title = ()=>{
 const Author = ()=>{
   return (
     <div>
-      <h5>by Prince Harry The Duke of Sussex and Random House Audio</h5>
+      <h5 style={{color: '#617d98', fontSize: '0.75rem', marginTop:'0.25rem'}}>by Prince Harry The Duke of Sussex and Random House Audio</h5>
     </div>
   );
 }
