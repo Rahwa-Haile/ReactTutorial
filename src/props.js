@@ -5,7 +5,7 @@ import "./index.css";
 const firstJob = {
   author: "by Prince Harry The Duke of Sussex and Random House Audio",
   title: "Spare",
-  img: "https://m.media-amazon.com/images/I/91NlZifnNEL._AC_UL480_FMwebp_QL65_.jpg"
+  img: "https://m.media-amazon.com/images/I/91NlZifnNEL._AC_UL480_FMwebp_QL65_.jpg",
 };
 const secondJob = {
   author: "Mark Manson",
@@ -32,7 +32,7 @@ function BookList() {
 }
 
 const Book = (props) => {
-  console.log(props)
+  console.log(props);
   const { img, author, title } = props;
   return (
     <article className="book">
