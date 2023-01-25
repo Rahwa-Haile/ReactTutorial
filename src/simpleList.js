@@ -2,12 +2,12 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 
-const books = [
+const books = [               
   {
     author: "by Prince Harry The Duke of Sussex and Random House Audio",
     title: "Spare",
     img: "https://m.media-amazon.com/images/I/91NlZifnNEL._AC_UL480_FMwebp_QL65_.jpg",
-  },
+  },                                                   
   {
     author: "Mark Manson",
     title: "The Subtle Art of Not Giving a F*ck",
@@ -15,17 +15,13 @@ const books = [
   },
 ];
 
-const names = ['Betisha', 'Ellaye', 'Rahwsh']
+const names = ["Betisha", "Ellaye", "Rahwsh"];
 
-const newNames = names.map((name)=>{
-  return <h1>{name}</h1>
-})
+const newNames = names.map((name) => {
+  return <h1>{name}</h1>;
+});
 function BookList() {
-  return (
-    <section className="booklist">
-      {newNames}
-    </section>
-  )
+  return <section className="booklist">{newNames}</section>;
 }
 
 const Book = (props) => {
@@ -40,4 +36,4 @@ const Book = (props) => {
   );
 };
 
-ReactDOM.render(<BookList/>, document.getElementById("root"));
+ReactDOM.render(<BookList />, document.getElementById("root"));
