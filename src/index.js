@@ -21,18 +21,22 @@ function BookList() {
   return (
     <section className="booklist">
       {books.map((book) => {
-        return <Book key={books.id} {...book} />;
+        return <Book key={book.id} {...book} />;
       })}
     </section>
   );
 }
 
 const Book = ({ img, author, title }) => {
+  const clickHandler = () => {
+    alert("Hello world");
+  };
   return (
     <article className="book">
       <img src={img} alt="" />
-      <h1>{title}</h1>
+      <h1 onClick={() => console.log(title)}>{title}</h1>
       <h5>{author.toUpperCase()}</h5>
+      <button onClick={clickHandler}>reference example</button>
     </article>
   );
 };
